@@ -1,0 +1,96 @@
+.masthead{
+    background-color:#2C3E50;
+    width: 100%;
+  
+  
+}
+
+.submit-line {
+  padding: -20%;
+
+}
+
+input{
+
+  font-size: large;
+    border-radius:10px;
+    widows: 50px;
+   width: 65%;
+   height: 30px;
+   z-index: 1;
+   position: relative;
+  left: 10%;
+  top: -45px;
+  
+
+  
+  
+}
+
+.btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 10px 10px 0;
+    width:70px;
+    font-weight:bold;
+    position: relative;
+    top: -30px;
+    left: 10%;
+    cursor: pointer;
+  
+   
+    
+  }
+
+.perfil{
+  position: relative;
+  top: -28px;
+  left: 21%;
+  cursor: pointer;  
+
+}
+
+.barra {
+    background-color: grey;
+    height: 100%;
+    width: 178px;
+    position:absolute;
+    transition: all .2s linear;
+    cursor: pointer;
+
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  top: 0px;
+}
+
+nav a  {
+  text-decoration: none;
+}
+
+.barra nav div{
+  background-color: #494958;
+  padding: 15px;
+  font-family: Arial;
+  font-size: 12pt;
+  transition: all .2s linear;
+  color: #f4f4f9;
+  border-style: groove;
+}
+
+table{
+  border: 10px solid #6E7B8B;
+  padding: 30%;
+  width: 30px;
+  left: 100px;
+  height: 15px;
+  right: 280px;
+  position: absolute;
+  margin-left: 230px;
+  margin: 50px 200px;
+  
+}
