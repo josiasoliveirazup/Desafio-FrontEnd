@@ -86,6 +86,17 @@ nav a  {
   
 }
 
+.zupmain{
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  padding: 10%;
+  padding-left: 19% ;
+  padding-top: 10%;
+  position: relative;
+
+
+}
+
 table{
   border: 10px solid #6E7B8B;
   padding: 30%;
@@ -101,7 +112,7 @@ table{
 }
 .table{
   width: 80%;
-  margin: 49px -100px 2em 135px;
+  margin: -764px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
   margin-block-end: auto;
@@ -132,5 +143,15 @@ table{
       border-radius: 100%;
       cursor: pointer;
     
+}
+
+.rodape{
+  height: 50px;
+color: white;
+font-size: 14px;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+background: #6b6c68;
+  line-height: 50px;
 }
 
