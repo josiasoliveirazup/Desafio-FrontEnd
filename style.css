@@ -1,19 +1,21 @@
 .masthead{
     background-color:#2C3E50;
-    width: 100%;
+    width: 93%;
+    
   
   
 }
 
 .submit-line {
-  padding: -20%;
+  padding: -50%;
+ 
 
 }
 
 input{
 
   font-size: large;
-    border-radius:10px;
+    border-radius:36px;
     widows: 50px;
    width: 65%;
    height: 30px;
@@ -52,7 +54,7 @@ input{
 }
 
 .barra {
-    background-color: grey;
+    background-color: white;
     height: 100%;
     width: 178px;
     position:absolute;
@@ -73,13 +75,15 @@ nav a  {
 }
 
 .barra nav div{
-  background-color: #494958;
+  background-color:white;
   padding: 15px;
   font-family: Arial;
   font-size: 12pt;
   transition: all .2s linear;
-  color: #f4f4f9;
+  color:#2C3E50;
   border-style: groove;
+  
+  
 }
 
 table{
@@ -93,4 +97,40 @@ table{
   margin-left: 230px;
   margin: 50px 200px;
   
+  
 }
+.table{
+  width: 80%;
+  margin: 49px -100px 2em 135px;
+  border-collapse: collapse;
+  text-align: left;
+  margin-block-end: auto;
+  
+ 
+  
+  
+}
+
+#linha,tr,th {
+  width: 30%;
+  border-bottom: 2px solid #6E7B8B;
+  
+}
+
+#linha,th{
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: 100;
+  color: #2C3E50;
+  border-bottom: 2px;
+  padding: 12px;
+}
+
+.imagem1 {
+      max-width: 59px;
+      padding-left: -12px;
+      border-radius: 100%;
+      cursor: pointer;
+    
+}
+
