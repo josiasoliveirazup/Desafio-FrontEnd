@@ -1,0 +1,33 @@
+.header{
+        padding: 175px;
+        padding-top: 10%;
+        background: #2C3E50;
+}
+
+.main{
+  background-color: rgb(76, 76, 83);
+  width: 503px;
+  height: 373px;
+  position: relative;
+  margin-top: -219px;
+  margin-left: 553px;
+  padding-left: 41%;
+  margin-right: 30%;
+  right: 208px;
+  padding: 80px;
+ 
+}
+
+.imagem{
+    max-width: 232px;
+    padding-left: -12px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-left: 140px;
+    padding-right: 20px;
+    position: absolute;
+   
+    
+  
+}
+
