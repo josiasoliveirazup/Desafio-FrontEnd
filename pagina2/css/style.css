@@ -5,7 +5,7 @@
 }
 
 .main{
-  background-color: rgb(76, 76, 83);
+  background-color: rgb(207, 207, 221);
   width: 503px;
   height: 373px;
   position: relative;
@@ -15,6 +15,7 @@
   margin-right: 30%;
   right: 208px;
   padding: 80px;
+  
  
 }
 
@@ -30,5 +31,70 @@
    
     
   
+} 
+
+.texto {
+    padding-left: 15px ;
+    padding-right: 30px;
+    padding-top: 15px;
+    position:static; 
+    text-align: center;  
 }
 
+.texto2{
+
+  padding-left: 15px ;
+  line-height: 478px;
+  text-align: center;
+ 
+}
+
+.button{
+ 
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -120px;
+ right: -700px;
+ text-align: center;
+
+  
+}
+
+.boneco{
+  border-radius: 68px;
+  right: 50px;
+  margin-left: -222px;
+  border-style: solid;
+  border-color: black;
+ 
+  
+}
+
+.calendario{
+
+  border-radius: 20px;
+  right: 50px;
+  margin-left: 41px;
+  border-style: solid;
+  border-color: black;
+  
+ 
+
+}
+
+.carta{
+  margin-left: 41px ;
+  border-radius: 20px;
+  border-style: solid;
+  border-color:black;
+ 
+}
+
+.chave{
+  margin-left: 41px;
+  border-radius: 36px;
+  border-style: solid;
+  border-color:black;
+ 
+}
