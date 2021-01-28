@@ -1,6 +1,6 @@
 .masthead{
     background-color:#2C3E50;
-    width: 93%;
+    width: 100%;
     
   
   
@@ -8,6 +8,10 @@
 
 .submit-line {
   padding: -50%;
+  position: relative;
+  padding-left: 15px;
+  padding-left: 15px;
+
  
 
 }
@@ -24,22 +28,25 @@ input{
   left: 10%;
   top: -45px;
   
+  
 
   
   
 }
 
-.btnBusca{
-    border:none;
-    float:left;
-    height:32px;
+.botton{
+    
+    
     border-radius:0 10px 10px 0;
     width:70px;
-    font-weight:bold;
-    position: relative;
-    top: -30px;
-    left: 10%;
-    cursor: pointer;
+    float: left;
+    position: absolute;
+    padding-left: 15px;
+    top: 41px;
+   
+   
+    
+  
   
    
     
@@ -89,11 +96,11 @@ nav a  {
 .zupmain{
   opacity: 0.4;
   filter: alpha(opacity=40); /* For IE8 and earlier */
-  padding: 10%;
-  padding-left: 19% ;
-  padding-top: 10%;
+  padding: 17%;
+  padding-left: 14% ;
+  padding-top: 0px;
   position: relative;
-
+  
 
 }
 
@@ -112,7 +119,7 @@ table{
 }
 .table{
   width: 80%;
-  margin: -764px -100px 2em 135px;
+  margin: -893px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
   margin-block-end: auto;

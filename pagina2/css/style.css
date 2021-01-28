@@ -15,8 +15,16 @@
   margin-right: 30%;
   right: 208px;
   padding: 80px;
+  vertical-align: middle;
+  
   
  
+}
+.main:nth-child(odd) {
+  background-color:#222222;
+}
+.main:nth-child(even) {
+  background-color:#292929;
 }
 
 .imagem{
@@ -96,5 +104,15 @@
   border-radius: 36px;
   border-style: solid;
   border-color:black;
+ 
+}
+
+.fundo{
+  background-color: #8e97a0;
+ position: relative;
+  padding: 50%;
+ width: -5%;
+ top: 50px;
+backface-visibility:  initial;
  
 }
