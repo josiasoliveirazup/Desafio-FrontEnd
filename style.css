@@ -1,7 +1,7 @@
 .masthead{
     background-color:#2C3E50;
     width: 100%;
-    box-shadow:2px 0px 8px darkorange;
+    box-shadow:2px 0px 8px greenyellow;
     
   
   
@@ -98,8 +98,8 @@ nav a  {
   top: 155px;
   left: 0;
   
+  
 }
-
 
 .zupmain{
   opacity: 0.4;
