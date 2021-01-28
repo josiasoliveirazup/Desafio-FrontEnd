@@ -23,7 +23,7 @@ input{
     widows: 50px;
    width: 65%;
    height: 30px;
-   z-index: 1;
+   z-index: 0;
    position: relative;
   left: 10%;
   top: -45px;
@@ -38,11 +38,14 @@ input{
     
     
     border-radius:0 10px 10px 0;
-    width:70px;
+    width:50px;
     float: left;
-    position: absolute;
+    position: relative;
     padding-left: 15px;
-    top: 41px;
+    top: -21px;
+    overflow: hidden;
+    padding-right: 50px;
+    left: 342px;
    
    
     
