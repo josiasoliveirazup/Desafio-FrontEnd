@@ -46,13 +46,8 @@ input{
     top: -21px;
     overflow: hidden;
     padding-right: 50px;
-    left: 342px;
-   
-   
-    
-  
-  
-   
+    left: 293px;
+    cursor: pointer;
     
   }
 
@@ -88,7 +83,7 @@ nav a  {
 .barra {
   background-color:white;
   font-family: Arial;
-  font-size: 12pt;
+  font-size: 30px;
   transition: all .2s linear;
   color:#2C3E50;
   border-style: groove;
@@ -97,9 +92,20 @@ nav a  {
   width: 175px;    
   top: 155px;
   left: 0;
+  margin: 10px;
+  
   
   
 }
+
+.barra i {
+  margin: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  
+}
+
+
 
 .zupmain{
   opacity: 0.4;
@@ -108,10 +114,11 @@ nav a  {
   padding-left: 14% ;
   padding-top: 0px;
   position: relative;
+
+  
   
 
 }
-
 
 
 table{
@@ -128,7 +135,7 @@ table{
   
 }
 .table{
-  width: 80%;
+  width: 100%;
   margin: -807px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
@@ -139,9 +146,16 @@ table{
   
 }
 
+.name{
+  text-align: center;
+  right: -83px;
+  position: relative;
+}
+
 #linha,tr,th {
   width: 30%;
   border-bottom: 2px solid #6E7B8B;
+  position: relative;
   
 }
 
@@ -152,6 +166,11 @@ table{
   color: #2C3E50;
   border-bottom: 2px;
   padding: 12px;
+  position:relative;
+  width: 15px;
+  padding-left: 0px;
+  right: 18px;
+  
 }
 
 .imagem1 {
@@ -159,6 +178,7 @@ table{
       padding-left: -12px;
       border-radius: 100%;
       cursor: pointer;
+      
     
 }
 
@@ -172,3 +192,81 @@ background: #6b6c68;
   line-height: 50px;
 }
 
+
+
+.cabecalho {
+  text-align: center;
+  right: 40px
+}
+
+
+.emails{
+  text-align: center
+}
+
+.email1{
+  width:20px;
+  right: 353px;
+ 
+}
+
+.email2{
+  width:20px;
+  right: -69px;
+ 
+}
+.email3{
+  width:20px;
+  right: -69px;
+  
+}
+.email4{
+  width:20px;
+  right: -69px;
+  
+}
+
+.email5{
+  width:20px;
+  right: -69px;
+  
+}
+
+
+.cabecalho th{
+  width:20px;
+  text-align: center;
+  right: 40px;
+}
+
+.telefone1{
+  width:20px;
+  right: 354px;
+  
+}
+
+.uberlandia{
+  right:173px;
+}
+
+.telefone2{
+  width:20px;
+  right: -68px;
+  
+}
+.telefone3{
+  width:20px;
+  right: -68px;
+  
+}
+.telefone4{
+  width:20px;
+  right: -68px;
+  
+}
+
+.telefone5{
+  width:20px;
+  right: -68px;
+  
+}
