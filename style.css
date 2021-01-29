@@ -99,7 +99,7 @@ nav a  {
 }
 
 .barra i {
-  margin: 5px;
+  margin: 1px;
   font-weight: bolder;
   font-size: 20px;
   
@@ -114,6 +114,8 @@ nav a  {
   padding-left: 14% ;
   padding-top: 0px;
   position: relative;
+  
+  
 
   
   
@@ -170,6 +172,7 @@ table{
   width: 15px;
   padding-left: 0px;
   right: 18px;
+  word-break: initial;
   
 }
 
@@ -196,7 +199,9 @@ background: #6b6c68;
 
 .cabecalho {
   text-align: center;
-  right: 40px
+  margin-right: 40px;
+  
+  
 }
 
 
@@ -218,6 +223,7 @@ background: #6b6c68;
 .email3{
   width:20px;
   right: -69px;
+  position: inherit;
   
 }
 .email4{
