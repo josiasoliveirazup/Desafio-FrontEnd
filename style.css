@@ -110,10 +110,13 @@ nav a  {
 .zupmain{
   opacity: 0.4;
   filter: alpha(opacity=40); /* For IE8 and earlier */
-  padding: 17%;
+  padding: 20%;
   padding-left: 14% ;
   padding-top: 0px;
   position: relative;
+  width: auto;
+  height: auto;
+  margin: 4px;
   
   
 
@@ -206,41 +209,51 @@ background: #6b6c68;
 
 
 .emails{
-  text-align: center
+  text-align: center;
+  width: 50%;
+  right: 30px;
 }
 
 .email1{
-  width:20px;
-  right: 353px;
+  width:50%;
+  right: -380px;
+  margin-left: 100px;
+  left: -525px;
+  right: 10px;
+  text-align: justify;
+  position: relative;
  
 }
 
 .email2{
-  width:20px;
+  width:50%;
   right: -69px;
+  text-align: center;
  
 }
 .email3{
   width:20px;
   right: -69px;
   position: inherit;
+  text-align: center;
   
 }
 .email4{
   width:20px;
   right: -69px;
+  text-align: center;
   
 }
 
 .email5{
   width:20px;
   right: -69px;
-  
+  text-align: center;
 }
 
 
 .cabecalho th{
-  width:20px;
+  width:50%;
   text-align: center;
   right: 40px;
 }
@@ -248,6 +261,7 @@ background: #6b6c68;
 .telefone1{
   width:20px;
   right: 354px;
+  position: relative;
   
 }
 
@@ -257,22 +271,42 @@ background: #6b6c68;
 
 .telefone2{
   width:20px;
-  right: -68px;
+  right: 0px;
+  position: relative;
   
+ 
 }
 .telefone3{
   width:20px;
-  right: -68px;
+  right: 0px;
+  position: relative;
   
 }
 .telefone4{
   width:20px;
-  right: -68px;
+  right: 0px;
+  position: relative;
   
 }
 
 .telefone5{
-  width:20px;
-  right: -68px;
+  width:50%;
+  right: 0px;
+  vertical-align: center;
+  position: relative;
   
+}
+
+.head{
+  text-align: center;
+}
+
+.mail{
+  vertical-align:center;
+  width:80%
+}
+
+.tel{
+ width: 100%;
+ position: relative;
 }
