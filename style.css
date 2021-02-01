@@ -227,29 +227,44 @@ background: #6b6c68;
 
 .email2{
   
-  
+  width:50%;
+  right: -380px;
+  margin-left: 100px;
+  left: -393px;
+  right: 10px;
+  position: relative;
   
  
  
 }
 .email3{
-  width:0px;
-  right: -100px;
-  position: inherit;
-  text-align: center;
+  width:50%;
+  right: -380px;
+  margin-left: 100px;
+  left: -393px;
+  right: 10px;
+  position: relative;
+  
   
 }
 .email4{
-  width:20px;
-  right: -69px;
-  text-align: center;
+  width:50%;
+  right: -380px;
+  margin-left: 100px;
+  left: -393px;
+  right: 10px;
+  position: relative;
   
 }
 
 .email5{
-  width:20px;
-  right: -69px;
-  text-align: center;
+  width:50%;
+  right: -380px;
+  margin-left: 100px;
+  left: -393px;
+  right: 10px;
+  position: relative;
+  
 }
 
 
