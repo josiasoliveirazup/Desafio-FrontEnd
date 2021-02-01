@@ -140,7 +140,7 @@ table{
   
 }
 .table{
-  width: 100%;
+  width: 75%;
   margin: -807px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
@@ -212,28 +212,29 @@ background: #6b6c68;
   text-align: center;
   width: 50%;
   right: 30px;
+  position: absolute;
 }
 
 .email1{
   width:50%;
   right: -380px;
   margin-left: 100px;
-  left: -525px;
+  left: -393px;
   right: 10px;
-  text-align: justify;
   position: relative;
  
 }
 
 .email2{
-  width:50%;
-  right: -69px;
-  text-align: center;
+  
+  
+  
+ 
  
 }
 .email3{
-  width:20px;
-  right: -69px;
+  width:0px;
+  right: -100px;
   position: inherit;
   text-align: center;
   
@@ -258,16 +259,7 @@ background: #6b6c68;
   right: 40px;
 }
 
-.telefone1{
-  width:20px;
-  right: 354px;
-  position: relative;
-  
-}
 
-.uberlandia{
-  right:173px;
-}
 
 .telefone2{
   width:20px;
@@ -307,6 +299,33 @@ background: #6b6c68;
 }
 
 .tel{
- width: 100%;
- position: relative;
+  text-align: justify;
+}
+
+.lorraine{
+  padding:20px;
+  width: 0;
+  left: 0;
+  display: block;
+}
+
+.miguel{
+  padding:20px;
+  width: 0;
+  left: 0;
+  display: block;
+}
+
+.liz{
+  padding:20px;
+  width: 0;
+  left: 0;
+  display: block;
+}
+
+.vanessa{
+  padding:20px;
+  width: 0;
+  left: 0;
+  display: block;
 }
