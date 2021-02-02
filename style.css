@@ -66,14 +66,18 @@ input{
     position:absolute;
     transition: all .2s linear;
     cursor: pointer;
+    
 
 }
+
+
 
 nav {
   width: 100%;
   position: absolute;
   top: 60px;
   top: 0px;
+  
 }
 
 nav a  {
@@ -96,12 +100,16 @@ nav a  {
   
   
   
+  
+  
 }
 
 .barra i {
   margin: 1px;
   font-weight: bolder;
   font-size: 20px;
+  
+  
   
 }
 
@@ -116,7 +124,8 @@ nav a  {
   position: relative;
   width: auto;
   height: auto;
-  margin: 4px;
+  
+  
   
   
 
@@ -138,13 +147,15 @@ table{
   margin: 50px 200px;
   
   
+  
 }
 .table{
   width: 75%;
   margin: -807px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
-  margin-block-end: auto;
+  
+  
   
  
   
@@ -162,6 +173,7 @@ table{
   border-bottom: 2px solid #6E7B8B;
   position: relative;
   
+  
 }
 
 #linha,th{
@@ -177,6 +189,7 @@ table{
   right: 18px;
   word-break: initial;
   
+  
 }
 
 .imagem1 {
@@ -185,9 +198,45 @@ table{
       border-radius: 100%;
       cursor: pointer;
       
+      
     
+
 }
 
+.cabecalho {
+  text-align: center;
+  margin-right: 40px;
+  
+  
+}
+
+.lorraine{
+  padding:20px;
+  width: 0;
+  left: -36px;
+  display: block;
+}
+
+.miguel{
+  padding:20px;
+  width: 0;
+  left: -36px;
+  display: block;
+}
+
+.liz{
+  padding:20px;
+  width: 0;
+  left: -20px;
+  display: block;
+}
+
+.vanessa{
+  padding:20px;
+  width: 0;
+  left: -36px;
+  display: block;
+}
 .rodape{
   height: 50px;
 color: white;
@@ -198,149 +247,36 @@ background: #6b6c68;
   line-height: 50px;
 }
 
+.tel2{
+  right: -150px;
+  left: -155px;
+  
+}
 
-
-.cabecalho {
+.local{
   text-align: center;
-  margin-right: 40px;
-  
-  
-}
-
-
-.emails{
-  text-align: center;
-  width: 50%;
-  right: 30px;
-  position: absolute;
-}
-
-.email1{
-  width:50%;
-  right: -380px;
-  margin-left: 100px;
-  left: -393px;
-  right: 10px;
   position: relative;
- 
+  left: 26px;
+  
+}
+.email{
+  left: -220px;
+  text-align: left;
+  
 }
 
-.email2{
-  
-  width:50%;
-  right: -380px;
-  margin-left: 100px;
-  left: -393px;
-  right: 10px;
+thead .local{
+  left: -150px;
+}
+
+thead .email{
   position: relative;
-  
- 
- 
-}
-.email3{
-  width:50%;
-  right: -380px;
-  margin-left: 100px;
-  left: -393px;
-  right: 10px;
-  position: relative;
-  
-  
-}
-.email4{
-  width:50%;
-  right: -380px;
-  margin-left: 100px;
-  left: -393px;
-  right: 10px;
-  position: relative;
-  
-}
-
-.email5{
-  width:50%;
-  right: -380px;
-  margin-left: 100px;
-  left: -393px;
-  right: 10px;
-  position: relative;
-  
-}
-
-
-.cabecalho th{
-  width:50%;
-  text-align: center;
-  right: 40px;
-}
-
-
-
-.telefone2{
-  width:20px;
-  right: 0px;
-  position: relative;
-  
- 
-}
-.telefone3{
-  width:20px;
-  right: 0px;
-  position: relative;
-  
-}
-.telefone4{
-  width:20px;
-  right: 0px;
-  position: relative;
-  
-}
-
-.telefone5{
-  width:50%;
-  right: 0px;
-  vertical-align: center;
-  position: relative;
-  
-}
-
-.head{
-  text-align: center;
-}
-
-.mail{
-  vertical-align:center;
-  width:80%
+  right: -150px;
 }
 
 .tel{
-  text-align: justify;
-}
+  text-align: center;
+  left: 32px;
+  position: relative;
 
-.lorraine{
-  padding:20px;
-  width: 0;
-  left: 0;
-  display: block;
-}
-
-.miguel{
-  padding:20px;
-  width: 0;
-  left: 0;
-  display: block;
-}
-
-.liz{
-  padding:20px;
-  width: 0;
-  left: 0;
-  display: block;
-}
-
-.vanessa{
-  padding:20px;
-  width: 0;
-  left: 0;
-  display: block;
 }
