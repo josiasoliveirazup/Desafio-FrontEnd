@@ -80,9 +80,6 @@ nav {
   
 }
 
-nav a  {
-  text-decoration: none;
-}
 
 .barra {
   background-color:white;
@@ -97,6 +94,8 @@ nav a  {
   top: 155px;
   left: 0;
   margin: 10px;
+  cursor: pointer;
+  z-index: 20;
   
   
   
@@ -108,29 +107,27 @@ nav a  {
   margin: 1px;
   font-weight: bolder;
   font-size: 20px;
-  
-  
+
+
   
 }
 
 
 
 .zupmain{
-  opacity: 0.4;
+  opacity: 0.3;
   filter: alpha(opacity=40); /* For IE8 and earlier */
   padding: 20%;
   padding-left: 14% ;
   padding-top: 0px;
-  position: relative;
   width: auto;
   height: auto;
-  
-  
-  
   
 
   
   
+  
+
 
 }
 
@@ -154,13 +151,21 @@ table{
   margin: -807px -100px 2em 135px;
   border-collapse: collapse;
   text-align: left;
+
   
   
-  
- 
   
   
 }
+
+.table td{
+
+  text-align:center;
+  padding: 5px;
+  
+}
+
+
 
 .name{
   text-align: center;
@@ -207,35 +212,6 @@ table{
   text-align: center;
   margin-right: 40px;
   
-  
-}
-
-.lorraine{
-  padding:20px;
-  width: 0;
-  left: -36px;
-  display: block;
-}
-
-.miguel{
-  padding:20px;
-  width: 0;
-  left: -36px;
-  display: block;
-}
-
-.liz{
-  padding:20px;
-  width: 0;
-  left: -20px;
-  display: block;
-}
-
-.vanessa{
-  padding:20px;
-  width: 0;
-  left: -36px;
-  display: block;
 }
 .rodape{
   height: 50px;
@@ -247,36 +223,3 @@ background: #6b6c68;
   line-height: 50px;
 }
 
-.tel2{
-  right: -150px;
-  left: -155px;
-  
-}
-
-.local{
-  text-align: center;
-  position: relative;
-  left: 26px;
-  
-}
-.email{
-  left: -220px;
-  text-align: left;
-  
-}
-
-thead .local{
-  left: -150px;
-}
-
-thead .email{
-  position: relative;
-  right: -150px;
-}
-
-.tel{
-  text-align: center;
-  left: 32px;
-  position: relative;
-
-}
