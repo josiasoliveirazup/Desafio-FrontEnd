@@ -62,7 +62,6 @@ input{
     background-color: white;
     height: 100%;
     width: 178px;
-    position:absolute;
     transition: all .2s linear;
     cursor: pointer;
     
@@ -94,7 +93,7 @@ nav {
   margin: 10px;
   cursor: pointer;
   z-index: 20;
-  
+ 
   
   
   
@@ -132,7 +131,12 @@ nav {
 
 table{
   border: 10px solid #6E7B8B;
-  
+ left: 15px;
+ right: 20px;
+ left: 15px;
+ right: 15px;
+
+ 
  
   
   
@@ -143,6 +147,7 @@ table{
 
   text-align:center;
   padding: 5px;
+  
   
 }
 
@@ -200,6 +205,8 @@ font-size: 14px;
 text-align: center;
 text-shadow: 2px 2px 2px black;
 background: #6b6c68;
-  line-height: 50px;
+line-height: 50px;
+width: 100%;
+  
 }
 
