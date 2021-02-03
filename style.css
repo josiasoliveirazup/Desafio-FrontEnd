@@ -41,7 +41,6 @@ input{
     border-radius:0 10px 10px 0;
     width:50px;
     float: left;
-    position: relative;
     padding-left: 15px;
     top: -21px;
     overflow: hidden;
@@ -52,7 +51,7 @@ input{
   }
 
 .perfil{
-  position: relative;
+  
   top: -28px;
   left: 11%;
   cursor: pointer;  
@@ -74,7 +73,6 @@ input{
 
 nav {
   width: 100%;
-  position: absolute;
   top: 60px;
   top: 0px;
   
@@ -134,25 +132,8 @@ nav {
 
 table{
   border: 10px solid #6E7B8B;
-  padding: 30%;
-  width: 30px;
-  left: 100px;
-  height: 15px;
-  right: 280px;
-  position: absolute;
-  margin-left: 230px;
-  margin: 50px 200px;
   
-  
-  
-}
-.table{
-  width: 75%;
-  margin: -807px -100px 2em 135px;
-  border-collapse: collapse;
-  text-align: left;
-
-  
+ 
   
   
   
@@ -170,13 +151,13 @@ table{
 .name{
   text-align: center;
   right: -83px;
-  position: relative;
+  
 }
 
 #linha,tr,th {
   width: 30%;
   border-bottom: 2px solid #6E7B8B;
-  position: relative;
+
   
   
 }
@@ -188,7 +169,6 @@ table{
   color: #2C3E50;
   border-bottom: 2px;
   padding: 12px;
-  position:relative;
   width: 15px;
   padding-left: 0px;
   right: 18px;
