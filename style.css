@@ -121,7 +121,7 @@ table{
 border: 10px solid #6E7B8B;
  margin: 250px;
  width: 900px;
- margin-top: -65%;
+ margin-top: -55%;
  
  
 }
@@ -156,13 +156,6 @@ border: 10px solid #6E7B8B;
   word-break: initial;
   
   
-}
-
-.imagem1 {
-      max-width: 59px;
-      padding-left: -12px;
-      border-radius: 100%;
-      cursor: pointer;
 }
 
 .masthead{
@@ -206,6 +199,11 @@ border: 10px solid #6E7B8B;
           padding-left: -12px;
           border-radius: 100%;
           cursor: pointer;
+    }
+
+    .link {
+      text-decoration: none;
+      color: inherit;
     }
           
     .masthead{
@@ -257,4 +255,4 @@ margin-top: 500px;
   
 }
 
- 
+

@@ -2,7 +2,27 @@
         padding: 175px;
         padding-top: 10%;
         background: #2C3E50;
+        
 }
+
+.seta {
+ 
+  padding-top: 0px;
+  left: 80px;
+  width: 78px;
+  top: 22px;
+  background-image: url(../img/seta.png);
+  background-color: darkgrey;
+  position: fixed;
+  border-radius: 50px;
+  box-shadow:1px 1px 10px rgba(18, 19, 18, 0.863);
+  cursor: pointer;
+   
+  
+}
+
+  
+
 
 .main{
   background-color: rgb(207, 207, 221);
