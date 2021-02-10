@@ -31,6 +31,7 @@
 
 #main{
     display: flex;
+    text-align: justify;
 }
 
 .imagezup{
@@ -43,7 +44,7 @@
 
 #menu{
     display: inline-flex;
-    background-color: red;
+    background-color: white;
     margin:0px 50px 0px 180px;
     height: 500px;
     flex-direction: column;
