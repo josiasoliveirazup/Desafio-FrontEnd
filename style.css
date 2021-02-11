@@ -52,12 +52,36 @@
    
 }
 
-#opcao{
+.opcao{
+
     cursor: pointer;
-    
     
 }
 
+.fa-home{
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 15px;
+    
+}
+ 
+.fa-search{
+    cursor: pointer;
+    text-align: center;
+    word-spacing: 15px;
+}
+
+.fa-trash{
+    cursor: pointer;
+    text-align: center;
+    word-spacing: 15px;
+}
+
+
+#menu :hover{
+    color:yellowgreen;
+}
 
 #tabela{
     
