@@ -1,8 +1,7 @@
 .head {
     background-color: #2C3E50;
-    width: 71%;
+    width: 100%;
     height: 50px;
-    margin-left: 180px;
     display:flex;
     
     
@@ -18,6 +17,7 @@
    background-image: url(img/lupa.png);
    background-repeat: no-repeat;
    cursor: pointer;
+   text-align: center;
  
 }
 
@@ -31,7 +31,7 @@
 
 #main{
     display: flex;
-    text-align: justify;
+    
 }
 
 .imagezup{
@@ -45,32 +45,45 @@
 #menu{
     display: inline-flex;
     background-color: white;
-    margin:0px 50px 0px 180px;
     height: 500px;
     flex-direction: column;
-    
-  
+    margin-right: 100px;
+    min-width: 193px;
+   
 }
+
+#opcao{
+    cursor: pointer;
+    
+    
+}
+
 
 #tabela{
     
     border: 1px solid;
     margin-top: 33px;
-  
+      
 }
 
 
 
 #tabela tr td{
-    width: 100px;
+    width: 120px;
     height: 0px;
     text-align: center;
     font-family: sans-serif;
     
+}
    
-
+    .imagem{
+        max-width: 59px;
+        padding-left: -12px;
+        border-radius: 100%;
+        cursor: pointer;
 }
 
 body{
     background-color: #F9F9F9;
 }
+
