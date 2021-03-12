@@ -1,0 +1,107 @@
+.container1{
+    background-color:#2C3E50;
+    width: 70%;
+    min-height: 300px;
+    margin-left: 15%;
+    position: relative;
+    top: 0;
+
+
+
+}
+
+.container2{
+    background-color:#F4F4F4;
+    width: 70%;
+    min-height: 400px;
+    margin-left:15%;
+    position: relative;
+    
+    
+}
+
+.container3{
+    background-color: #FFFFFF;
+    width: 39%;
+    left: 221px;
+    min-height: 500px;
+    margin-left: 17%;
+    display: flex;
+    z-index: 1;
+    margin-top: -500px;
+    position: relative;
+    top: -99px;
+    
+    
+    
+}
+
+.container4{
+    background-color:#F4F4F4;
+    width: 38.5%;
+    min-height: 144px;
+    margin-left: 30%;
+    position:fixed;
+    top: 109px;
+    z-index: 2;
+    display: flex;
+    right: 521px;
+    
+    
+    
+    
+    
+}
+
+#img{
+    width:30%;
+    left: 50px;
+    margin-left: 180px;
+    border-radius: 181px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    top: 50px;
+
+}
+
+
+.boneco{
+    
+    width: 5%;
+    top: 400px;
+    left: 994px;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+ 
+    
+}
+
+.calendario{
+    width: 5%;
+    top: 400px;
+    left: 600px;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+
+}
+
+.carta{
+    width: 5%;
+    top: 410px;
+    left: 845px;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+}
+
+.chave{
+    width: 5%;
+    top: 400px;
+    left: 720px;
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+}
