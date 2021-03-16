@@ -10,6 +10,12 @@
 
 }
 
+.button{
+    width:50px;
+    margin:15px;
+    cursor:pointer;
+}
+
 .container2{
     background-color:#F4F4F4;
     width: 70%;
