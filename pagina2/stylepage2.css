@@ -24,34 +24,33 @@
     position: relative;
     
     
+    
 }
 
 .container3{
     background-color: #FFFFFF;
     width: 39%;
-    left: 221px;
+    left: 13%;
     min-height: 500px;
     margin-left: 17%;
-    display: flex;
     z-index: 1;
     margin-top: -500px;
     position: relative;
-    top: -99px;
-    
-    
+    display: flex;
+    justify-content: space-between;
     
 }
 
 .container4{
     background-color:#F4F4F4;
-    width: 38.5%;
-    min-height: 144px;
-    margin-left: 30%;
+    width: 39%;
+    min-height: 102px;
+    margin-left: 11%;
     position:fixed;
-    top: 109px;
-    z-index: 2;
-    display: flex;
-    right: 521px;
+    z-index: 1;
+    right: 31%;
+    
+    
     
     
     
@@ -60,14 +59,14 @@
 }
 
 #img{
-    width:30%;
-    left: 50px;
+    width:29%;
+    left: 80px;
     margin-left: 180px;
     border-radius: 181px;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     display: block;
-    top: 50px;
+    top: 39px;
    
 
 }
@@ -208,3 +207,4 @@
     position: absolute;
     
 }
+
