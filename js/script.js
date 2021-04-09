@@ -1,34 +1,44 @@
-/*function(){  
+//function(){  
     var pesquisa = [
-        {"nome":"Marcelo"},
-        {"nome":"Lorena"}
+        {"nome":"Marcelo", "endereco":"BH" , "img":"img/h5.jpg"},
+        {"nome":"Lorena" , "endereco": "SP"}
     ];
 
     let tabela = document.getElementById('tabela')
     console.log('teste',tabela)
+    var user=pesquisa[0]
+    var node = document.createElement("td");  
+    var img = document.createElement("img"); 
+    var nome = document.createElement("td");
+    var endereco = document.createElement("td"); 
+    img.src=user.img;
+    img.classList.add("imagem");
+    nome.innerHTML=user.nome;
+    endereco.innerHTML=user.endereco;
 
-    var node = document.createElement("LI");  
-    node.innerHTML =pesquisa[0].nome;
+    node.appendChild(img)
+    node.appendChild(nome)
+    node.appendChild(endereco)
+
     tabela.appendChild(node)
        
-})()
+//})()
+
+
+
+/*window.onload=function(){
+
+var filtro = document.getElementById('busca');
+var tabela = document.getElementById('tabela');
+filtro.onkeyup = function() {
+    var nomeFiltro = filtro.value;
+    for (var i = 1; i < tabela.rows.length; i++) {
+        var conteudoCelula = tabela.rows[i].cells[0].innerText;
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        tabela.rows[i].style.display = corresponde ? '' : 'none';
+    }
+}
+}
+
 */
 
-function myFunction() {
-    var input, filter, tr, td, i, txtValue;
-    input = document.getElementById("busca");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("tabela");
-    tr = table.getElementsByTagName("tr");
-    for (i = 0; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td")[0];
-      if (td) {
-        txtValue = td.textContent || td.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = "";
-        } else {
-          tr[i].style.display = "none";
-        }
-      }       
-    }
-  }
