@@ -1,5 +1,5 @@
 //function(){  
-    var pesquisa = [
+  /*  var pesquisa = [
         {"nome":"Marcelo", "endereco":"BH" , "img":"img/h5.jpg"},
         {"nome":"Lorena" , "endereco": "SP"}
     ];
@@ -21,12 +21,12 @@
     node.appendChild(endereco)
 
     tabela.appendChild(node)
-       
+       */
 //})()
 
 
 
-/*window.onload=function(){
+window.onload=function(){
 
 var filtro = document.getElementById('busca');
 var tabela = document.getElementById('tabela');
@@ -40,5 +40,5 @@ filtro.onkeyup = function() {
 }
 }
 
-*/
+
 
