@@ -26,7 +26,7 @@
 
 
 
-window.onload=function(){
+/* window.onload=function(){
 
 var filtro = document.getElementById('busca');
 var tabela = document.getElementById('tabela');
@@ -39,6 +39,28 @@ filtro.onkeyup = function() {
     }
 }
 }
+*/
+
+$('#busca').keyup(function() {
+    var nomeFiltro = $(this).val().toLowerCase();
+    console.log(nomeFiltro);
+    $('tbody').find('tr').each(function() {
+        var conteudoCelula = $(this).find('td').text();
+        console.log(conteudoCelula);
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        $(this).css('display', corresponde ? '' : 'none');
+    });
+});
+
+
+/* var searchElementInput = document.getElementById('tabela')
+
+tabela.addEventListener('input', ()=>{
+  console.log(tabela.value)
+})
+
+*/
+
 
 
 
