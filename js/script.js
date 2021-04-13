@@ -61,6 +61,37 @@ tabela.addEventListener('input', ()=>{
 
 */
 
+$("#removediv1").click(function(){
+    $('#user1').empty("");
+});
+$("#removediv2").click(function(){
+    $('#user2').empty("");
+});
+$("#removediv3").click(function(){
+    $('#user3').empty("");
+});
+$("#removediv4").click(function(){
+    $('#user4').empty("");
+});
 
 
-
+$(document).ready(
+    function() {
+        $('.fa-trash').click(
+            function() {
+                swal({
+                    title : "Você tem certeza que deseja excluir este registro ?",
+                    text : "Você não poderá recuperar este registro após excluir !",
+                    type : "warning",
+                    showCancelButton : true,
+                    confirmButtonColor : "#DD6B55",
+                    confirmButtonText : "Sim",
+                    closeOnConfirm : false
+                },
+            function() {
+                swal("Excluído!",
+                    "Este registro foi excluído.",
+                    "success");
+                });
+            });
+    });
