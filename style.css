@@ -108,12 +108,13 @@
     
 }
    
-    .imagem{
+    .image{
         max-width: 59px;
         padding-left: -12px;
         border-radius: 100%;
         cursor: pointer;
         margin: 10px;
+    
 }
 
 body{
