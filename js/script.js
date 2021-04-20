@@ -78,8 +78,9 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
             {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
             {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
             {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' },
-            {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' }
+            {name: 'Wesley ',email: 'wesley.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' }
     ]
+    
 
   function render(employeeList){
       var tableElement = document.getElementById("employees");
@@ -137,4 +138,34 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         render(list.filter(client => cliente.finished))
 
     }
+  
+
+  $('#busca').on('keyup', function() {
+        var value = $(this).val()
+        console.log('Value:',value)
+        var list = searchTable(value )
+
+        render(list)
+
+    })
+
+   
+
+   function searchTable(value, employeeList ){
+        var employeeList = []
+
+        for (var i = 0; i < employee.length; i++){
+            value = value.toUpperCase()
+            var name = employeeList[i].name.toLowerCase()
+
+            if (name.includes(value)) {
+                employeeList.push(employeeList[i])
+
+            }
+        }
+
+        return employeeList
+    }
+
+  
   
