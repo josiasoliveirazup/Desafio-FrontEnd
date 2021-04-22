@@ -41,16 +41,6 @@ filtro.onkeyup = function() {
 }
 */
 
-$('#busca').keyup(function() {
-    var nomeFiltro = $(this).val().toLowerCase();
-    console.log(nomeFiltro);
-    $('tbody').find('tr').each(function() {
-        var conteudoCelula = $(this).find('td').text();
-        console.log(conteudoCelula);
-        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-        $(this).css('display', corresponde ? '' : 'none');
-    });
-});
 
 
 /* var searchElementInput = document.getElementById('tabela')
@@ -61,7 +51,7 @@ tabela.addEventListener('input', ()=>{
 
 */
 
-$("#removediv1").click(function(){
+/*$("#removediv1").click(function(){
     $('#user1').empty("");
 });
 $("#removediv2").click(function(){
@@ -74,17 +64,21 @@ $("#removediv4").click(function(){
     $('#user4').empty("");
 });
 
+*/
+
 var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' },
             {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
             {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
-            {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' },
-            {name: 'Wesley ',email: 'wesley.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' }
+            {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
+            {name: 'Wesley ',email: 'wesley.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true }
     ]
     
 
   function render(employeeList){
       var tableElement = document.getElementById("employees");
-    
+      while (tableElement.hasChildNodes()) {  
+        tableElement.removeChild(tableElement.firstChild);
+      }  
 
       employeeList.forEach(item=>{
           console.log(item.name)
@@ -99,7 +93,7 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
 
           
           
-
+          
           tdName.innerHTML=item.name;
           tdEmail.innerHTML=item.email;
           tdPhone.innerHTML=item.phone;
@@ -126,16 +120,11 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
 
     function filter(filter){
         console.log('Filter' , filter)
-        if (filter ==='all')
-        render(list)
-
-
-        if (filter ==='deleted')
-        render(list.filter(client =>client.deleted))
-
-
-        if (filter ==='finished')
-        render(list.filter(client => cliente.finished))
+        if  (filter ==='all')  render(list)
+       
+        if (filter ==='deleted') render(list.filter(client =>client.deleted))
+    
+        if (filter ==='finished') render(list.filter(client => client.finished))
 
     }
   
@@ -143,23 +132,23 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
   $('#busca').on('keyup', function() {
         var value = $(this).val()
         console.log('Value:',value)
-        var list = searchTable(value )
+        var listFiltered = searchTable(value, list )
 
-        render(list)
+        render(listFiltered)
 
     })
 
    
 
-   function searchTable(value, employeeList ){
+   function searchTable(value, employees ){
         var employeeList = []
 
-        for (var i = 0; i < employee.length; i++){
+        for (var i = 0; i < employees.length; i++){
             value = value.toUpperCase()
-            var name = employeeList[i].name.toLowerCase()
+            var name = employees[i].name.toUpperCase()
 
             if (name.includes(value)) {
-                employeeList.push(employeeList[i])
+                employeeList.push(employees[i])
 
             }
         }
