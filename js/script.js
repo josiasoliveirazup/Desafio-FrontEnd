@@ -66,7 +66,7 @@ $("#removediv4").click(function(){
 
 */
 
-var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' },
+var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' ,buttonElement:'Lixeira'},
             {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
             {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
             {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
@@ -90,6 +90,13 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           var imgUrl = document.createElement("img")
           imgUrl.src = 'https://picsum.photos/200 ';
           imgUrl.classList.add("image");
+          var buttonElement = document.createElement('button')
+        
+          
+       
+          
+         
+          
 
           
           
@@ -99,6 +106,9 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           tdPhone.innerHTML=item.phone;
           tdLocation.innerHTML=item.location;
           imgUrl.innerHTML=item.imgUrl
+          buttonElement.appendChild(document.createTextNode('Lixeira'))
+         
+          
           
     
 
@@ -107,6 +117,9 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           row.appendChild(tdEmail)
           row.appendChild(tdPhone)
           row.appendChild(tdLocation)
+          row.appendChild(buttonElement)
+      
+
          
         
     
@@ -123,6 +136,7 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         if  (filter ==='all')  render(list)
        
         if (filter ==='deleted') render(list.filter(client =>client.deleted))
+
     
         if (filter ==='finished') render(list.filter(client => client.finished))
 
@@ -138,7 +152,6 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
 
     })
 
-   
 
    function searchTable(value, employees ){
         var employeeList = []
@@ -156,5 +169,6 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         return employeeList
     }
 
+
   
-  
+    
