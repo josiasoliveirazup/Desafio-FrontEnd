@@ -66,7 +66,7 @@ $("#removediv4").click(function(){
 
 */
 
-var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' ,buttonElement:'Lixeira'},
+var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG'},
             {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
             {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
             {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
@@ -79,6 +79,7 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
       while (tableElement.hasChildNodes()) {  
         tableElement.removeChild(tableElement.firstChild);
       }  
+
 
       employeeList.forEach(item=>{
           console.log(item.name)
@@ -94,12 +95,7 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         
           
        
-          
-         
-          
 
-          
-          
           
           tdName.innerHTML=item.name;
           tdEmail.innerHTML=item.email;
@@ -107,10 +103,16 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           tdLocation.innerHTML=item.location;
           imgUrl.innerHTML=item.imgUrl
           buttonElement.appendChild(document.createTextNode('Lixeira'))
+          buttonElement.onclick =  function moveElement(){
+            alert(item.name);
+            item.deleted = true;
+            item.finished = false;
+            render(list);
+        }
+
+          
          
           
-          
-    
 
           row.appendChild(imgUrl)  
           row.appendChild(tdName)
@@ -118,8 +120,8 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           row.appendChild(tdPhone)
           row.appendChild(tdLocation)
           row.appendChild(buttonElement)
-      
-
+          
+    
          
         
     
@@ -170,5 +172,6 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
     }
 
 
-  
-    
+   
+
+        
