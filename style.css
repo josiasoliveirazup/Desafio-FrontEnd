@@ -121,3 +121,17 @@ body{
     background-color: #F9F9F9;
 }
 
+
+.button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #ABABAB;
+    color: floralwhite;
+    cursor: pointer;
+    justify-content: space-between;
+    word-spacing: 5px;
+    margin: 0 10px;
+
+    
+}
+

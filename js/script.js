@@ -1,76 +1,14 @@
-//function(){  
-  /*  var pesquisa = [
-        {"nome":"Marcelo", "endereco":"BH" , "img":"img/h5.jpg"},
-        {"nome":"Lorena" , "endereco": "SP"}
-    ];
-
-    let tabela = document.getElementById('tabela')
-    console.log('teste',tabela)
-    var user=pesquisa[0]
-    var node = document.createElement("td");  
-    var img = document.createElement("img"); 
-    var nome = document.createElement("td");
-    var endereco = document.createElement("td"); 
-    img.src=user.img;
-    img.classList.add("imagem");
-    nome.innerHTML=user.nome;
-    endereco.innerHTML=user.endereco;
-
-    node.appendChild(img)
-    node.appendChild(nome)
-    node.appendChild(endereco)
-
-    tabela.appendChild(node)
-       */
-//})()
 
 
 
-/* window.onload=function(){
-
-var filtro = document.getElementById('busca');
-var tabela = document.getElementById('tabela');
-filtro.onkeyup = function() {
-    var nomeFiltro = filtro.value;
-    for (var i = 1; i < tabela.rows.length; i++) {
-        var conteudoCelula = tabela.rows[i].cells[0].innerText;
-        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-        tabela.rows[i].style.display = corresponde ? '' : 'none';
-    }
-}
-}
-*/
-
-
-
-/* var searchElementInput = document.getElementById('tabela')
-
-tabela.addEventListener('input', ()=>{
-  console.log(tabela.value)
-})
-
-*/
-
-/*$("#removediv1").click(function(){
-    $('#user1').empty("");
-});
-$("#removediv2").click(function(){
-    $('#user2').empty("");
-});
-$("#removediv3").click(function(){
-    $('#user3').empty("");
-});
-$("#removediv4").click(function(){
-    $('#user4').empty("");
-});
-
-*/
 
 var selectedButton = 'todos';
 
-var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG'},
-            {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
-            {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
+
+
+var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' , finished:true },
+            {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' , finished:true },
+            {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ', finished:true },
             {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
             {name: 'Wesley ',email: 'wesley.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true }
     ]
@@ -91,11 +29,15 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           var tdPhone = document.createElement("td");
           var tdLocation = document.createElement("td");
           var imgUrl = document.createElement("img")
+          imgUrl.className = 'image'
           imgUrl.src = 'https://picsum.photos/200 ';
           imgUrl.classList.add("image");
           var buttonTrash = document.createElement('button')
+          buttonTrash.className = 'button'
           var buttonFinished = document.createElement('button')
+          buttonFinished.className = 'button'
           var buttonAll = document.createElement('button')
+          buttonAll.className = 'button'
           
         
           
@@ -121,6 +63,9 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           item.finished = true;
           render(list);
         }
+
+      
+    
     
 
         
@@ -132,12 +77,27 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           row.appendChild(tdEmail)
           row.appendChild(tdPhone)
           row.appendChild(tdLocation)
-          row.appendChild(buttonTrash)
-          row.appendChild(buttonFinished)
+        
+         
+        
 
           if (selectedButton != 'all'){     
+          
             row.appendChild(buttonAll)
+            
           }
+
+          if (selectedButton != 'finished'){
+            row.appendChild(buttonFinished)
+          }
+
+          if(selectedButton != 'deleted'){
+            row.appendChild(buttonTrash)
+          }
+
+        
+
+          
           
     
          
@@ -155,7 +115,7 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         console.log('Filter' , filter)
         if  (filter ==='all') {
           selectedButton = 'all'
-          
+
           render(list)
 
         }
@@ -171,7 +131,14 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         
 
     
-        if (filter ==='finished') render(list.filter(client => client.finished))
+        if (filter ==='finished') {
+          selectedButton = 'finished'
+
+          render(list.filter(client => client.finished))
+        }
+        
+        
+        
 
     }
   
@@ -203,11 +170,8 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
    }
 
     
-      
    
-
-
-
+  
    
 
         
