@@ -66,6 +66,8 @@ $("#removediv4").click(function(){
 
 */
 
+var selectedButton = 'todos';
+
 var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG'},
             {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' },
             {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ'},
@@ -91,7 +93,10 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           var imgUrl = document.createElement("img")
           imgUrl.src = 'https://picsum.photos/200 ';
           imgUrl.classList.add("image");
-          var buttonElement = document.createElement('button')
+          var buttonTrash = document.createElement('button')
+          var buttonFinished = document.createElement('button')
+          var buttonAll = document.createElement('button')
+          
         
           
        
@@ -102,15 +107,23 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           tdPhone.innerHTML=item.phone;
           tdLocation.innerHTML=item.location;
           imgUrl.innerHTML=item.imgUrl
-          buttonElement.appendChild(document.createTextNode('Lixeira'))
-          buttonElement.onclick =  function moveElement(){
-            alert(item.name);
+          buttonTrash.appendChild(document.createTextNode('\u00A0\Lixeira'))
+          buttonFinished.appendChild(document.createTextNode(' \u00A0\Atendidos'))
+          buttonAll.appendChild(document.createTextNode(' \u00A0\Todos'))
+          buttonTrash.onclick =  function moveElement(){
             item.deleted = true;
             item.finished = false;
-            render(list);
+            render(list);        
         }
 
-          
+        buttonFinished.onclick = function moveElement(){
+          item.deleted = false;
+          item.finished = true;
+          render(list);
+        }
+    
+
+        
          
           
 
@@ -119,7 +132,12 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
           row.appendChild(tdEmail)
           row.appendChild(tdPhone)
           row.appendChild(tdLocation)
-          row.appendChild(buttonElement)
+          row.appendChild(buttonTrash)
+          row.appendChild(buttonFinished)
+
+          if (selectedButton != 'all'){     
+            row.appendChild(buttonAll)
+          }
           
     
          
@@ -135,9 +153,22 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
 
     function filter(filter){
         console.log('Filter' , filter)
-        if  (filter ==='all')  render(list)
+        if  (filter ==='all') {
+          selectedButton = 'all'
+          
+          render(list)
+
+        }
+         
        
-        if (filter ==='deleted') render(list.filter(client =>client.deleted))
+        if (filter ==='deleted') {
+          selectedButton = 'deleted'
+
+          render(list.filter(client =>client.deleted))
+        }
+
+
+        
 
     
         if (filter ==='finished') render(list.filter(client => client.finished))
@@ -169,7 +200,12 @@ var list = [{name: 'Marcelo ',imgUrl:"",email: 'marcelo.beck22@exemple.com',phon
         }
 
         return employeeList
-    }
+   }
+
+    
+      
+   
+
 
 
    
