@@ -6,11 +6,11 @@ var selectedButton = 'todos';
 
 
 
-var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-861-1890' , location: 'Uberlandia-MG' , finished:true },
-            {name: 'Lorena ',email: 'lorena.beck22@exemple.com', phone:'(960)-861-1890' , location: 'São Paulo-SP' , finished:true },
-            {name: 'Thais ',email: 'thais.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ', finished:true },
-            {name: 'Maria ',email: 'maria.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
-            {name: 'Wesley ',email: 'wesley.beck22@exemple.com', phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true }
+var list = [{img:"../img/h5.jpg" , name: 'Marcelo ',email: 'marcelo.beck22@exemple.com'   , phone:'(960)-861-1890' , location: 'Uberlandia-MG' , finished:true },
+            {img:"../img/m1.jpeg", name: 'Lorena ',email: 'lorena.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'São Paulo-SP' , finished:true },
+            {img:"../img/m3.jpeg", name: 'Thais ',email: 'thais.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ', finished:true },
+            {img:"../img/m2.jpeg",name: 'Maria ',email: 'maria.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
+            {img:"../img/h4.jpeg",name: 'Wesley ',email: 'wesley.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true }
     ]
     
 
@@ -23,14 +23,14 @@ var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-
 
       employeeList.forEach(item=>{
           console.log(item.name)
+          console.log(item.img)
           var row = document.createElement("tr");
           var tdName = document.createElement("td");
           var tdEmail = document.createElement("td");
           var tdPhone = document.createElement("td");
           var tdLocation = document.createElement("td");
           var imgUrl = document.createElement("img")
-          imgUrl.className = 'image'
-          imgUrl.src = 'https://picsum.photos/200 ';
+          imgUrl.src = item.img;
           imgUrl.classList.add("image");
           var buttonTrash = document.createElement('button')
           buttonTrash.className = 'button'
@@ -43,7 +43,7 @@ var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-
           
        
 
-          
+      
           tdName.innerHTML=item.name;
           tdEmail.innerHTML=item.email;
           tdPhone.innerHTML=item.phone;
@@ -94,15 +94,7 @@ var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-
           if(selectedButton != 'deleted'){
             row.appendChild(buttonTrash)
           }
-
-        
-
           
-          
-    
-         
-        
-    
 
         tableElement.appendChild(row)
           
@@ -172,6 +164,5 @@ var list = [{ name: 'Marcelo ',email: 'marcelo.beck22@exemple.com',phone:'(960)-
     
    
   
-   
 
         
