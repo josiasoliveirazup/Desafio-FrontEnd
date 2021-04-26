@@ -6,11 +6,11 @@ var selectedButton = 'todos';
 
 
 
-var list = [{img:"../img/h5.jpg" , name: 'Marcelo ',email: 'marcelo.beck22@exemple.com'   , phone:'(960)-861-1890' , location: 'Uberlandia-MG' , finished:true },
-            {img:"../img/m1.jpeg", name: 'Lorena ',email: 'lorena.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'São Paulo-SP' , finished:true },
-            {img:"../img/m3.jpeg", name: 'Thais ',email: 'thais.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ', finished:true },
-            {img:"../img/m2.jpeg",name: 'Maria ',email: 'maria.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true },
-            {img:"../img/h4.jpeg",name: 'Wesley ',email: 'wesley.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true }
+var list = [{img:"../img/h5.jpg" , name: 'Marcelo ',email: 'marcelo.beck22@exemple.com'   , phone:'(960)-861-1890' , location: 'Uberlandia-MG' , finished:true , deleted: true, all: true},
+            {img:"../img/m1.jpeg", name: 'Lorena ',email: 'lorena.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'São Paulo-SP' , finished:true, deleted: true , all: false },
+            {img:"../img/m3.jpeg", name: 'Thais ',email: 'thais.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Rio de Janeiro-RJ', finished:true, deleted: true, all: true },
+            {img:"../img/m2.jpeg",name: 'Maria ',email: 'maria.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , finished:true , deleted: true , all: true},
+            {img:"../img/h4.jpeg",name: 'Wesley ',email: 'wesley.beck22@exemple.com' , phone:'(960)-861-1890' , location: 'Belo Horizonte-MG' , deleted: true ,finished:true , all: true }
     ]
     
 
