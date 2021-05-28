@@ -69,6 +69,10 @@
     text-align: center;
     letter-spacing: 2px;
     word-spacing: 15px;
+    justify-content: space-between;
+    top: 0px;
+    margin-top: 0px;
+
     
 }
  
@@ -91,7 +95,7 @@
     color:yellowgreen;
 }
 
-#tabela{
+.tabela{
     
     border: 1px solid;
     margin-top: 33px;
@@ -100,11 +104,14 @@
 
 
 
-#tabela tr td{
-    width: 120px;
+.tabela tr td{
+    width: 160px;
     height: 0px;
     text-align: center;
     font-family: sans-serif;
+    border-bottom: 1px solid
+    
+    
     
 }
    
@@ -134,4 +141,5 @@ body{
 
     
 }
+
 
